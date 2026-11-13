@@ -15,9 +15,6 @@ const firebaseConfig = {
 
 const app = getApps().length ? getApp() : initializeApp(firebaseConfig);
 
-console.log("FIREBASE PROJECT:", app.options.projectId);
-console.log("FIREBASE AUTH DOMAIN:", app.options.authDomain);
-
 // WebChannel 400 Bad Request алдааг засах + Fast Refresh үед гацахаас сэргийлэх
 let db: Firestore;
 try {
